@@ -46,7 +46,7 @@ export default function Home() {
   )
 }
 
-export const Part = (props: any) => {
+const Part = (props: any) => {
   return (
     <div className='my-32 h-40'>
       <Button className="w-60 block mx-auto my-10 bg-blue-600" size="large" variant='contained' onClick={props.handleClick} >5秒かかる処理（{props.async ? '非同期' : '同期'}）</Button>
@@ -56,7 +56,7 @@ export const Part = (props: any) => {
   )
 }
 
-export const SideMenu = () => {
+const SideMenu = () => {
   return (
     <div className="my-28 text-blue-300">
       <FormGroup className='my-5'>
